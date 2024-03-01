@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules for naming JS variables</title>
+</head>
+<body> -->
+    <!-- Question no 3 -->
+    <!-- a) <h1>Rules for naming JS variables</h1>
+    b) <p>Variable names can only contain letters, numbers, underscores, and dollar signs.</p> -->
+    <!-- c) <p>Variables must begin with a letter, underscore, or dollar sign. For example $name, _name, or name</p> -->
+     <!-- d) <p>Variable names are case sensitive</p>     -->
+     <!-- e)  <p>Variable names should not be JS reserved keywords</p> -->
+<!-- </body>
+<script src="app.js"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subject Marks Calculator</title>
+  <style>
+    table {
+      font-family: Arial, sans-serif;
+      border-collapse: collapse;
+      width: 50%;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h2>Subject Marks Calculator</h2>
+  <script>
+    // Prompt user for subject names
+    var subject1 = prompt("Enter first subject name:");
+    var subject2 = prompt("Enter second subject name:");
+    var subject3 = prompt("Enter third subject name:");
+
+    // Total marks for each subject
+    var totalMarks = 100;
+
+    // Obtain marks for each subject from user
+    var marks1 = parseInt(prompt("Enter obtained marks for " + subject1 + ":"));
+    var marks2 = parseInt(prompt("Enter obtained marks for " + subject2 + ":"));
+    var marks3 = parseInt(prompt("Enter obtained marks for " + subject3 + ":"));
+
+    
+    // Calculate total marks and percentage
+    var totalObtainedMarks = marks1 + marks2 + marks3;
+
+    var subject1perc = (marks1 / totalMarks) * 100;
+    var subject2perc = (marks2 / totalMarks) * 100;
+    var subject3perc = (marks3 / totalMarks) * 100;
+
+    var totalPercentage = (totalObtainedMarks / (3 * totalMarks)) * 100;
+
+    // Display results in browser
+
+    document.write("<table>");
+    document.write("<tr> <th>Subject</th> <th>Total Marks</th> <th>Obtained Marks</th> <th>Percentage</th> </tr>");
+    document.write("<tr> <td>" + subject1 + "</td> <td>" + totalMarks + "</td> <td>" + marks1 + "</td> <td>" + subject1perc + "%" + "</td> </tr>");
+    document.write("<tr> <td>" + subject2 + "</td> <td>" + totalMarks + "</td><td>" + marks2 + "</td><td>" + subject2perc + "%" + "</td></tr>");
+    document.write("<tr> <td>" + subject3 + "</td> <td>" + totalMarks + "</td><td>" + marks3 + "</td><td>" + subject3perc + "%" + "</td></tr>");
+    document.write("<tr> <td>" + "" + "</td> <td>" + (3 * totalMarks) + "</td> <td>" + totalObtainedMarks + "</td> <td>" + totalPercentage.toFixed(2) + "%" + "</td> </tr>");
+    document.write("</table>");
+  </script>
+</body>
+</html>
